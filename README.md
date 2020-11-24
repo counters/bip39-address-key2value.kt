@@ -1,7 +1,7 @@
 # bip39-address-key2value.kt
-  Kotlin  implementation for [bip39-address-key2value](https://github.com/counters/bip39-address-key2value)
-  
 
+Kotlin  implementation for [bip39-address-key2value](https://github.com/counters/bip39-address-key2value)
+  
 ## Examples
 
 Encode
@@ -21,7 +21,7 @@ bip39Address.decode(address)?.let {
     if (it.type == TypeBip39Address.INTEGER) {
         println(Integer.parseInt(_payload, 16))
     } else if (it.type == TypeBip39Address.ASCII) {
-        println(HelpHex().getText(_payload)) // Hello World
+        println(HelpHex().getText(_payload)) // Hello World!
     }
 }
 ```
