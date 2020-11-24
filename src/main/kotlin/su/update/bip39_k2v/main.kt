@@ -6,7 +6,7 @@ import su.update.bip39_k2v.Utils.HelpHex
 fun main(args: Array<String>) {
     val bip39Address = Bip39Address()
 
-    val payload = "Hello World"
+    val payload = "Hello World!"
     val type = TypeBip39Address.ASCII
 //    val payload = 197379L // 197379  16843009
 //    val type = TypeBip39Address.INTEGER

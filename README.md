@@ -9,12 +9,12 @@ Encode
 val payload = "Hello World!"
 val type = TypeBip39Address.ASCII
 var address = bip39Address.encode(type, "key", payload)
-println("Mx"+address) // Mx0248656c6c6f20576f726c64016b6579014ceba4
+println("Mx"+address) // Mx0248656c6c6f20576f726c64210301454a5437d8
 ```
 
 Decode
 ```kotlin
-val address = "Mx0248656c6c6f20576f726c64016b6579014ceba4"
+val address = "0248656c6c6f20576f726c64210301454a5437d8"
 bip39Address.decode(address)?.let {
     println(it) //  ObjBip39Address(type=ASCII, topic=key, payload=48656c6c6f20576f726c64)
     val _payload = it.payload
