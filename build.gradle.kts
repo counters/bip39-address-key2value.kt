@@ -5,7 +5,7 @@ plugins {
     application
 }
 group = "su.update"
-version = "1.0.0"
+version = "v1.0.0"
 
 repositories {
     mavenCentral()
