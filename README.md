@@ -7,8 +7,9 @@ Kotlin  implementation for [bip39-address-key2value](https://github.com/counters
 Encode
 ```kotlin
 val payload = "Hello World!"
+val key = "key"
 val type = TypeBip39Address.ASCII
-var address = bip39Address.encode(type, "key", payload)
+var address = bip39Address.encode(type, key, payload)
 println("Mx"+address) // Mx0248656c6c6f20576f726c64210301454a5437d8
 ```
 
