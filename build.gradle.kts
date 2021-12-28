@@ -1,21 +1,24 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.4.20"
+    kotlin("jvm") version "1.6.10"
     application
 }
-group = "su.update"
-version = "1.0.0"
+group = "counters"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
 }
 dependencies {
-    testImplementation(kotlin("test-junit5"))
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+}
+tasks.test {
+    useJUnitPlatform()
 }
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "13"
 }
 application {
-    mainClassName = "su.update.bip39_k2v.MainKt"
+    mainClassName = "counters.bip39_k2v.MainKt"
 }

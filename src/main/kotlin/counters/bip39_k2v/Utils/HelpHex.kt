@@ -1,4 +1,4 @@
-package su.update.bip39_k2v.Utils
+package counters.bip39_k2v.Utils
 
 class HelpHex {
 

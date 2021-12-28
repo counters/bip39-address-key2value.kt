@@ -1,9 +1,9 @@
-package su.update.bip39_k2v
+package counters.bip39_k2v
 
-import su.update.bip39_k2v.Enum.TypeBip39Address
-import su.update.bip39_k2v.Model.ObjBip39Address
-import su.update.bip39_k2v.Utils.Crc16
-import su.update.bip39_k2v.Utils.HelpHex
+import counters.bip39_k2v.Enum.TypeBip39Address
+import counters.bip39_k2v.Model.ObjBip39Address
+import counters.bip39_k2v.Utils.Crc16
+import counters.bip39_k2v.Utils.HelpHex
 import kotlin.random.Random
 
 
@@ -71,7 +71,7 @@ class Bip39Address {
         var topic: String? = ""
         var topicNull = false
         var payload = ""
-        var payloadArr: ByteArray = byteArrayOf()
+//        var payloadArr: ByteArray = byteArrayOf()
         var random = ""
 
 
@@ -130,7 +130,7 @@ class Bip39Address {
         var topic: String? = ""
         var topicNull = false
         var payload = ""
-        var payloadArr: ByteArray = byteArrayOf()
+//        var payloadArr: ByteArray = byteArrayOf()
         var random = ""
 
         val type = Integer.parseInt(address.substring(0, 2), 16)

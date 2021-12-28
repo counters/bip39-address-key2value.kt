@@ -1,4 +1,4 @@
-package su.update.bip39_k2v.Enum
+package counters.bip39_k2v.Enum
 
 enum class TypeBip39Address (val int: Int) {
     RAW (0),

@@ -1,4 +1,4 @@
-package su.update.bip39_k2v.Utils
+package counters.bip39_k2v.Utils
 
 import kotlin.experimental.and
 
@@ -34,8 +34,8 @@ class Crc16 {
             val curr = it and 0xFF.toByte()
 //            val curr = it
             crc = crc xor curr.toInt()
-            (0..7).forEach { i ->
-                if (crc and 1 !=0)
+            (0..7).forEach { _ ->
+                if (crc and 1 != 0)
                     crc = (crc shr 1) xor 0xA001; // 0xA001 is the reflection of 0x8005
                 else
                     crc = crc shr 1
